@@ -75,9 +75,9 @@ chmod +x ./gradlew
 
 ## Manual changes
 
-After generation, manually fix this file for the code to compile:
+After generation, manually fix these files for the code to compile/work correctly:
 
-`src/main/java/com/woocommerce/model/WooCommerceProductVariation.java`
+### 1. `src/main/java/com/woocommerce/model/WooCommerceProductVariation.java`
 
 Remove `= false` from the `manageStock` field initialization:
 ```java
@@ -86,6 +86,27 @@ private WooCommerceWcV3ProductsProductIdVariationsPostRequestManageStock manageS
 
 // To this:
 private WooCommerceWcV3ProductsProductIdVariationsPostRequestManageStock manageStock;
+```
+
+### 2. `src/main/java/com/woocommerce/JSON.java` (in .openapi-generator-ignore)
+
+This file is excluded from regeneration. It contains a fix for WooCommerce date parsing.
+
+WooCommerce returns dates without timezone offsets (e.g., `2026-02-04T06:17:28`), but the default `OffsetDateTimeTypeAdapter` expects ISO-8601 with offset. The fix in `OffsetDateTimeTypeAdapter.read()` checks the string length (19 chars = no offset) and parses accordingly, assuming UTC:
+
+```java
+// WooCommerce returns dates without timezone offset (e.g., "2026-02-04T06:17:28")
+// which is exactly 19 chars. Dates with offset are longer (Z, +00:00, etc.)
+if (date.length() == 19) {
+    return LocalDateTime.parse(date, DateTimeFormatter.ISO_LOCAL_DATE_TIME).atOffset(ZoneOffset.UTC);
+}
+return OffsetDateTime.parse(date, formatter);
+```
+
+Required imports added:
+```java
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 ```
 
 ## Testing

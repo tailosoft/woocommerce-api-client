@@ -36,7 +36,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.ParsePosition;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Locale;
@@ -360,6 +362,11 @@ public class JSON {
                     String date = in.nextString();
                     if (date.endsWith("+0000")) {
                         date = date.substring(0, date.length()-5) + "Z";
+                    }
+                    // WooCommerce returns dates without timezone offset (e.g., "2026-02-04T06:17:28")
+                    // which is exactly 19 chars. Dates with offset are longer (Z, +00:00, etc.)
+                    if (date.length() == 19) {
+                        return LocalDateTime.parse(date, DateTimeFormatter.ISO_LOCAL_DATE_TIME).atOffset(ZoneOffset.UTC);
                     }
                     return OffsetDateTime.parse(date, formatter);
             }
