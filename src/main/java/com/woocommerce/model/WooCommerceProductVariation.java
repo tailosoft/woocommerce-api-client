@@ -303,7 +303,7 @@ public class WooCommerceProductVariation {
   public static final String SERIALIZED_NAME_MANAGE_STOCK = "manage_stock";
   @SerializedName(SERIALIZED_NAME_MANAGE_STOCK)
   @javax.annotation.Nullable
-  private WooCommerceWcV3ProductsProductIdVariationsPostRequestManageStock manageStock = false;
+  private WooCommerceWcV3ProductsProductIdVariationsPostRequestManageStock manageStock;
 
   public static final String SERIALIZED_NAME_STOCK_QUANTITY = "stock_quantity";
   @SerializedName(SERIALIZED_NAME_STOCK_QUANTITY)
