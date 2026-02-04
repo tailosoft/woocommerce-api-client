@@ -2,9 +2,29 @@
 
 This Java client was generated using the OpenAPI Generator Docker image.
 
+## Why we generate this library
+
+There is no official OpenAPI spec for WooCommerce. I opened an issue for that: https://github.com/woocommerce/woocommerce/issues/45733
+
+There is now an extension [WP OpenAPI](https://wordpress.org/plugins/wp-openapi/) that generates an OpenAPI spec. An extension is needed because of how types are defined in WordPress/WooCommerce code, making them only available at runtime (hard to do generation from static code).
+
+We are generating the library ourselves as other libraries seem incomplete.
+
 ## Generating woocommerce.json
 
 The `woocommerce.json` OpenAPI specification is generated using a fork of the [wp-openapi](https://github.com/moon0326/wp-openapi) plugin.
+
+We had to make two fixes to this plugin:
+1. Fix dateTime format handling
+2. Detect collections properly
+
+To generate the spec:
+
+```bash
+docker compose -f src/main/docker/wordpress.yml up
+```
+
+Then download the file for `/wc/v3` (the latest WooCommerce API) and click on export (Bundled References).
 
 After generating the specification, add the basicAuth security scheme and apply it globally:
 
