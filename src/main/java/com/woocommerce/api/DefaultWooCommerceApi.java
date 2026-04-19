@@ -48598,16 +48598,16 @@ public class DefaultWooCommerceApi {
     }
 
 
-    private ApiResponse<WooCommerceProduct> wcV3ProductsSuggestedProductsGetWithHttpInfo(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object brand, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable String type, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable Object featured, @javax.annotation.Nullable Object category, @javax.annotation.Nullable Object tag, @javax.annotation.Nullable Object shippingClass, @javax.annotation.Nullable Object attribute, @javax.annotation.Nullable Object attributeTerm, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object inStock, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable Object categories, @javax.annotation.Nullable Object tags, @javax.annotation.Nullable Object limit) throws ApiException {
+    private ApiResponse<List<WooCommerceProduct>> wcV3ProductsSuggestedProductsGetWithHttpInfo(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object brand, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable String type, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable Object featured, @javax.annotation.Nullable Object category, @javax.annotation.Nullable Object tag, @javax.annotation.Nullable Object shippingClass, @javax.annotation.Nullable Object attribute, @javax.annotation.Nullable Object attributeTerm, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object inStock, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable Object categories, @javax.annotation.Nullable Object tags, @javax.annotation.Nullable Object limit) throws ApiException {
         okhttp3.Call localVarCall = wcV3ProductsSuggestedProductsGetValidateBeforeCall(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, brand, slug, status, type, sku, featured, category, tag, shippingClass, attribute, attributeTerm, taxClass, inStock, onSale, minPrice, maxPrice, includeMeta, excludeMeta, categories, tags, limit, null);
-        Type localVarReturnType = new TypeToken<WooCommerceProduct>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<WooCommerceProduct>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    private okhttp3.Call wcV3ProductsSuggestedProductsGetAsync(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object brand, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable String type, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable Object featured, @javax.annotation.Nullable Object category, @javax.annotation.Nullable Object tag, @javax.annotation.Nullable Object shippingClass, @javax.annotation.Nullable Object attribute, @javax.annotation.Nullable Object attributeTerm, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object inStock, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable Object categories, @javax.annotation.Nullable Object tags, @javax.annotation.Nullable Object limit, final ApiCallback<WooCommerceProduct> _callback) throws ApiException {
+    private okhttp3.Call wcV3ProductsSuggestedProductsGetAsync(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object brand, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable String type, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable Object featured, @javax.annotation.Nullable Object category, @javax.annotation.Nullable Object tag, @javax.annotation.Nullable Object shippingClass, @javax.annotation.Nullable Object attribute, @javax.annotation.Nullable Object attributeTerm, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object inStock, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable Object categories, @javax.annotation.Nullable Object tags, @javax.annotation.Nullable Object limit, final ApiCallback<List<WooCommerceProduct>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = wcV3ProductsSuggestedProductsGetValidateBeforeCall(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, brand, slug, status, type, sku, featured, category, tag, shippingClass, attribute, attributeTerm, taxClass, inStock, onSale, minPrice, maxPrice, includeMeta, excludeMeta, categories, tags, limit, _callback);
-        Type localVarReturnType = new TypeToken<WooCommerceProduct>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<WooCommerceProduct>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -49079,7 +49079,7 @@ public class DefaultWooCommerceApi {
 
         /**
          * Execute wcV3ProductsSuggestedProductsGet request
-         * @return WooCommerceProduct
+         * @return List&lt;WooCommerceProduct&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
          <table border="1">
@@ -49088,14 +49088,14 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public WooCommerceProduct execute() throws ApiException {
-            ApiResponse<WooCommerceProduct> localVarResp = wcV3ProductsSuggestedProductsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, brand, slug, status, type, sku, featured, category, tag, shippingClass, attribute, attributeTerm, taxClass, inStock, onSale, minPrice, maxPrice, includeMeta, excludeMeta, categories, tags, limit);
+        public List<WooCommerceProduct> execute() throws ApiException {
+            ApiResponse<List<WooCommerceProduct>> localVarResp = wcV3ProductsSuggestedProductsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, brand, slug, status, type, sku, featured, category, tag, shippingClass, attribute, attributeTerm, taxClass, inStock, onSale, minPrice, maxPrice, includeMeta, excludeMeta, categories, tags, limit);
             return localVarResp.getData();
         }
 
         /**
          * Execute wcV3ProductsSuggestedProductsGet request with HTTP info returned
-         * @return ApiResponse&lt;WooCommerceProduct&gt;
+         * @return ApiResponse&lt;List&lt;WooCommerceProduct&gt;&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
          <table border="1">
@@ -49104,7 +49104,7 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public ApiResponse<WooCommerceProduct> executeWithHttpInfo() throws ApiException {
+        public ApiResponse<List<WooCommerceProduct>> executeWithHttpInfo() throws ApiException {
             return wcV3ProductsSuggestedProductsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, brand, slug, status, type, sku, featured, category, tag, shippingClass, attribute, attributeTerm, taxClass, inStock, onSale, minPrice, maxPrice, includeMeta, excludeMeta, categories, tags, limit);
         }
 
@@ -49120,7 +49120,7 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public okhttp3.Call executeAsync(final ApiCallback<WooCommerceProduct> _callback) throws ApiException {
+        public okhttp3.Call executeAsync(final ApiCallback<List<WooCommerceProduct>> _callback) throws ApiException {
             return wcV3ProductsSuggestedProductsGetAsync(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, brand, slug, status, type, sku, featured, category, tag, shippingClass, attribute, attributeTerm, taxClass, inStock, onSale, minPrice, maxPrice, includeMeta, excludeMeta, categories, tags, limit, _callback);
         }
     }
@@ -51381,16 +51381,16 @@ public class DefaultWooCommerceApi {
     }
 
 
-    private ApiResponse<WooCommerceShopOrderRefund> wcV3RefundsGetWithHttpInfo(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object dp, @javax.annotation.Nullable Object orderItemDisplayMeta, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta) throws ApiException {
+    private ApiResponse<List<WooCommerceShopOrderRefund>> wcV3RefundsGetWithHttpInfo(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object dp, @javax.annotation.Nullable Object orderItemDisplayMeta, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta) throws ApiException {
         okhttp3.Call localVarCall = wcV3RefundsGetValidateBeforeCall(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, dp, orderItemDisplayMeta, includeMeta, excludeMeta, null);
-        Type localVarReturnType = new TypeToken<WooCommerceShopOrderRefund>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<WooCommerceShopOrderRefund>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    private okhttp3.Call wcV3RefundsGetAsync(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object dp, @javax.annotation.Nullable Object orderItemDisplayMeta, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, final ApiCallback<WooCommerceShopOrderRefund> _callback) throws ApiException {
+    private okhttp3.Call wcV3RefundsGetAsync(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object dp, @javax.annotation.Nullable Object orderItemDisplayMeta, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, final ApiCallback<List<WooCommerceShopOrderRefund>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = wcV3RefundsGetValidateBeforeCall(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, dp, orderItemDisplayMeta, includeMeta, excludeMeta, _callback);
-        Type localVarReturnType = new TypeToken<WooCommerceShopOrderRefund>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<WooCommerceShopOrderRefund>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -51658,7 +51658,7 @@ public class DefaultWooCommerceApi {
 
         /**
          * Execute wcV3RefundsGet request
-         * @return WooCommerceShopOrderRefund
+         * @return List&lt;WooCommerceShopOrderRefund&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
          <table border="1">
@@ -51667,14 +51667,14 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public WooCommerceShopOrderRefund execute() throws ApiException {
-            ApiResponse<WooCommerceShopOrderRefund> localVarResp = wcV3RefundsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, dp, orderItemDisplayMeta, includeMeta, excludeMeta);
+        public List<WooCommerceShopOrderRefund> execute() throws ApiException {
+            ApiResponse<List<WooCommerceShopOrderRefund>> localVarResp = wcV3RefundsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, dp, orderItemDisplayMeta, includeMeta, excludeMeta);
             return localVarResp.getData();
         }
 
         /**
          * Execute wcV3RefundsGet request with HTTP info returned
-         * @return ApiResponse&lt;WooCommerceShopOrderRefund&gt;
+         * @return ApiResponse&lt;List&lt;WooCommerceShopOrderRefund&gt;&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
          <table border="1">
@@ -51683,7 +51683,7 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public ApiResponse<WooCommerceShopOrderRefund> executeWithHttpInfo() throws ApiException {
+        public ApiResponse<List<WooCommerceShopOrderRefund>> executeWithHttpInfo() throws ApiException {
             return wcV3RefundsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, dp, orderItemDisplayMeta, includeMeta, excludeMeta);
         }
 
@@ -51699,7 +51699,7 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public okhttp3.Call executeAsync(final ApiCallback<WooCommerceShopOrderRefund> _callback) throws ApiException {
+        public okhttp3.Call executeAsync(final ApiCallback<List<WooCommerceShopOrderRefund>> _callback) throws ApiException {
             return wcV3RefundsGetAsync(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, dp, orderItemDisplayMeta, includeMeta, excludeMeta, _callback);
         }
     }
@@ -64114,16 +64114,16 @@ public class DefaultWooCommerceApi {
     }
 
 
-    private ApiResponse<WooCommerceProductVariation> wcV3VariationsGetWithHttpInfo(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable String stockStatus, @javax.annotation.Nullable Object hasPrice, @javax.annotation.Nullable Object attributes, @javax.annotation.Nullable Object virtual, @javax.annotation.Nullable Object downloadable, @javax.annotation.Nullable Object includeStatus, @javax.annotation.Nullable Object excludeStatus) throws ApiException {
+    private ApiResponse<List<WooCommerceProductVariation>> wcV3VariationsGetWithHttpInfo(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable String stockStatus, @javax.annotation.Nullable Object hasPrice, @javax.annotation.Nullable Object attributes, @javax.annotation.Nullable Object virtual, @javax.annotation.Nullable Object downloadable, @javax.annotation.Nullable Object includeStatus, @javax.annotation.Nullable Object excludeStatus) throws ApiException {
         okhttp3.Call localVarCall = wcV3VariationsGetValidateBeforeCall(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, slug, status, sku, taxClass, onSale, minPrice, maxPrice, includeMeta, excludeMeta, stockStatus, hasPrice, attributes, virtual, downloadable, includeStatus, excludeStatus, null);
-        Type localVarReturnType = new TypeToken<WooCommerceProductVariation>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<WooCommerceProductVariation>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    private okhttp3.Call wcV3VariationsGetAsync(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable String stockStatus, @javax.annotation.Nullable Object hasPrice, @javax.annotation.Nullable Object attributes, @javax.annotation.Nullable Object virtual, @javax.annotation.Nullable Object downloadable, @javax.annotation.Nullable Object includeStatus, @javax.annotation.Nullable Object excludeStatus, final ApiCallback<WooCommerceProductVariation> _callback) throws ApiException {
+    private okhttp3.Call wcV3VariationsGetAsync(@javax.annotation.Nullable String context, @javax.annotation.Nullable Object page, @javax.annotation.Nullable Object perPage, @javax.annotation.Nullable Object search, @javax.annotation.Nullable Object after, @javax.annotation.Nullable Object before, @javax.annotation.Nullable Object modifiedAfter, @javax.annotation.Nullable Object modifiedBefore, @javax.annotation.Nullable Object datesAreGmt, @javax.annotation.Nullable Object exclude, @javax.annotation.Nullable Object include, @javax.annotation.Nullable Object offset, @javax.annotation.Nullable String order, @javax.annotation.Nullable String orderby, @javax.annotation.Nullable Object parent, @javax.annotation.Nullable Object parentExclude, @javax.annotation.Nullable Object slug, @javax.annotation.Nullable String status, @javax.annotation.Nullable Object sku, @javax.annotation.Nullable String taxClass, @javax.annotation.Nullable Object onSale, @javax.annotation.Nullable Object minPrice, @javax.annotation.Nullable Object maxPrice, @javax.annotation.Nullable Object includeMeta, @javax.annotation.Nullable Object excludeMeta, @javax.annotation.Nullable String stockStatus, @javax.annotation.Nullable Object hasPrice, @javax.annotation.Nullable Object attributes, @javax.annotation.Nullable Object virtual, @javax.annotation.Nullable Object downloadable, @javax.annotation.Nullable Object includeStatus, @javax.annotation.Nullable Object excludeStatus, final ApiCallback<List<WooCommerceProductVariation>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = wcV3VariationsGetValidateBeforeCall(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, slug, status, sku, taxClass, onSale, minPrice, maxPrice, includeMeta, excludeMeta, stockStatus, hasPrice, attributes, virtual, downloadable, includeStatus, excludeStatus, _callback);
-        Type localVarReturnType = new TypeToken<WooCommerceProductVariation>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<WooCommerceProductVariation>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -64535,7 +64535,7 @@ public class DefaultWooCommerceApi {
 
         /**
          * Execute wcV3VariationsGet request
-         * @return WooCommerceProductVariation
+         * @return List&lt;WooCommerceProductVariation&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
          <table border="1">
@@ -64544,14 +64544,14 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public WooCommerceProductVariation execute() throws ApiException {
-            ApiResponse<WooCommerceProductVariation> localVarResp = wcV3VariationsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, slug, status, sku, taxClass, onSale, minPrice, maxPrice, includeMeta, excludeMeta, stockStatus, hasPrice, attributes, virtual, downloadable, includeStatus, excludeStatus);
+        public List<WooCommerceProductVariation> execute() throws ApiException {
+            ApiResponse<List<WooCommerceProductVariation>> localVarResp = wcV3VariationsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, slug, status, sku, taxClass, onSale, minPrice, maxPrice, includeMeta, excludeMeta, stockStatus, hasPrice, attributes, virtual, downloadable, includeStatus, excludeStatus);
             return localVarResp.getData();
         }
 
         /**
          * Execute wcV3VariationsGet request with HTTP info returned
-         * @return ApiResponse&lt;WooCommerceProductVariation&gt;
+         * @return ApiResponse&lt;List&lt;WooCommerceProductVariation&gt;&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
          <table border="1">
@@ -64560,7 +64560,7 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public ApiResponse<WooCommerceProductVariation> executeWithHttpInfo() throws ApiException {
+        public ApiResponse<List<WooCommerceProductVariation>> executeWithHttpInfo() throws ApiException {
             return wcV3VariationsGetWithHttpInfo(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, slug, status, sku, taxClass, onSale, minPrice, maxPrice, includeMeta, excludeMeta, stockStatus, hasPrice, attributes, virtual, downloadable, includeStatus, excludeStatus);
         }
 
@@ -64576,7 +64576,7 @@ public class DefaultWooCommerceApi {
             <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
          </table>
          */
-        public okhttp3.Call executeAsync(final ApiCallback<WooCommerceProductVariation> _callback) throws ApiException {
+        public okhttp3.Call executeAsync(final ApiCallback<List<WooCommerceProductVariation>> _callback) throws ApiException {
             return wcV3VariationsGetAsync(context, page, perPage, search, after, before, modifiedAfter, modifiedBefore, datesAreGmt, exclude, include, offset, order, orderby, parent, parentExclude, slug, status, sku, taxClass, onSale, minPrice, maxPrice, includeMeta, excludeMeta, stockStatus, hasPrice, attributes, virtual, downloadable, includeStatus, excludeStatus, _callback);
         }
     }

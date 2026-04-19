@@ -5093,7 +5093,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/product"
+                items:
+                  $ref: "#/components/schemas/product"
+                type: array
           description: OK
       x-accepts:
       - application/json
@@ -5931,7 +5933,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/shop_order_refund"
+                items:
+                  $ref: "#/components/schemas/shop_order_refund"
+                type: array
           description: OK
       x-accepts:
       - application/json
@@ -7580,7 +7584,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/product_variation"
+                items:
+                  $ref: "#/components/schemas/product_variation"
+                type: array
           description: OK
       x-accepts:
       - application/json

@@ -15140,7 +15140,7 @@ public class Example {
 
 <a id="wcV3ProductsSuggestedProductsGet"></a>
 # **wcV3ProductsSuggestedProductsGet**
-> WooCommerceProduct wcV3ProductsSuggestedProductsGet().context(context).page(page).perPage(perPage).search(search).after(after).before(before).modifiedAfter(modifiedAfter).modifiedBefore(modifiedBefore).datesAreGmt(datesAreGmt).exclude(exclude).include(include).offset(offset).order(order).orderby(orderby).parent(parent).parentExclude(parentExclude).brand(brand).slug(slug).status(status).type(type).sku(sku).featured(featured).category(category).tag(tag).shippingClass(shippingClass).attribute(attribute).attributeTerm(attributeTerm).taxClass(taxClass).inStock(inStock).onSale(onSale).minPrice(minPrice).maxPrice(maxPrice).includeMeta(includeMeta).excludeMeta(excludeMeta).categories(categories).tags(tags).limit(limit).execute();
+> List&lt;WooCommerceProduct&gt; wcV3ProductsSuggestedProductsGet().context(context).page(page).perPage(perPage).search(search).after(after).before(before).modifiedAfter(modifiedAfter).modifiedBefore(modifiedBefore).datesAreGmt(datesAreGmt).exclude(exclude).include(include).offset(offset).order(order).orderby(orderby).parent(parent).parentExclude(parentExclude).brand(brand).slug(slug).status(status).type(type).sku(sku).featured(featured).category(category).tag(tag).shippingClass(shippingClass).attribute(attribute).attributeTerm(attributeTerm).taxClass(taxClass).inStock(inStock).onSale(onSale).minPrice(minPrice).maxPrice(maxPrice).includeMeta(includeMeta).excludeMeta(excludeMeta).categories(categories).tags(tags).limit(limit).execute();
 
 
 
@@ -15203,7 +15203,7 @@ public class Example {
     Object tags = null; // Object | Limit result set to specific product tag ids.
     Object limit = 5; // Object | Limit result set to specific amount of suggested products.
     try {
-      WooCommerceProduct result = apiInstance.wcV3ProductsSuggestedProductsGet()
+      List<WooCommerceProduct> result = apiInstance.wcV3ProductsSuggestedProductsGet()
             .context(context)
             .page(page)
             .perPage(perPage)
@@ -15298,7 +15298,7 @@ public class Example {
 
 ### Return type
 
-[**WooCommerceProduct**](WooCommerceProduct.md)
+[**List&lt;WooCommerceProduct&gt;**](WooCommerceProduct.md)
 
 ### Authorization
 
@@ -16083,7 +16083,7 @@ public class Example {
 
 <a id="wcV3RefundsGet"></a>
 # **wcV3RefundsGet**
-> WooCommerceShopOrderRefund wcV3RefundsGet().context(context).page(page).perPage(perPage).search(search).after(after).before(before).modifiedAfter(modifiedAfter).modifiedBefore(modifiedBefore).datesAreGmt(datesAreGmt).exclude(exclude).include(include).offset(offset).order(order).orderby(orderby).parent(parent).parentExclude(parentExclude).dp(dp).orderItemDisplayMeta(orderItemDisplayMeta).includeMeta(includeMeta).excludeMeta(excludeMeta).execute();
+> List&lt;WooCommerceShopOrderRefund&gt; wcV3RefundsGet().context(context).page(page).perPage(perPage).search(search).after(after).before(before).modifiedAfter(modifiedAfter).modifiedBefore(modifiedBefore).datesAreGmt(datesAreGmt).exclude(exclude).include(include).offset(offset).order(order).orderby(orderby).parent(parent).parentExclude(parentExclude).dp(dp).orderItemDisplayMeta(orderItemDisplayMeta).includeMeta(includeMeta).excludeMeta(excludeMeta).execute();
 
 
 
@@ -16129,7 +16129,7 @@ public class Example {
     Object includeMeta = null; // Object | Limit meta_data to specific keys.
     Object excludeMeta = null; // Object | Ensure meta_data excludes specific keys.
     try {
-      WooCommerceShopOrderRefund result = apiInstance.wcV3RefundsGet()
+      List<WooCommerceShopOrderRefund> result = apiInstance.wcV3RefundsGet()
             .context(context)
             .page(page)
             .perPage(perPage)
@@ -16190,7 +16190,7 @@ public class Example {
 
 ### Return type
 
-[**WooCommerceShopOrderRefund**](WooCommerceShopOrderRefund.md)
+[**List&lt;WooCommerceShopOrderRefund&gt;**](WooCommerceShopOrderRefund.md)
 
 ### Authorization
 
@@ -20722,7 +20722,7 @@ public class Example {
 
 <a id="wcV3VariationsGet"></a>
 # **wcV3VariationsGet**
-> WooCommerceProductVariation wcV3VariationsGet().context(context).page(page).perPage(perPage).search(search).after(after).before(before).modifiedAfter(modifiedAfter).modifiedBefore(modifiedBefore).datesAreGmt(datesAreGmt).exclude(exclude).include(include).offset(offset).order(order).orderby(orderby).parent(parent).parentExclude(parentExclude).slug(slug).status(status).sku(sku).taxClass(taxClass).onSale(onSale).minPrice(minPrice).maxPrice(maxPrice).includeMeta(includeMeta).excludeMeta(excludeMeta).stockStatus(stockStatus).hasPrice(hasPrice).attributes(attributes).virtual(virtual).downloadable(downloadable).includeStatus(includeStatus).excludeStatus(excludeStatus).execute();
+> List&lt;WooCommerceProductVariation&gt; wcV3VariationsGet().context(context).page(page).perPage(perPage).search(search).after(after).before(before).modifiedAfter(modifiedAfter).modifiedBefore(modifiedBefore).datesAreGmt(datesAreGmt).exclude(exclude).include(include).offset(offset).order(order).orderby(orderby).parent(parent).parentExclude(parentExclude).slug(slug).status(status).sku(sku).taxClass(taxClass).onSale(onSale).minPrice(minPrice).maxPrice(maxPrice).includeMeta(includeMeta).excludeMeta(excludeMeta).stockStatus(stockStatus).hasPrice(hasPrice).attributes(attributes).virtual(virtual).downloadable(downloadable).includeStatus(includeStatus).excludeStatus(excludeStatus).execute();
 
 
 
@@ -20780,7 +20780,7 @@ public class Example {
     Object includeStatus = null; // Object | Limit result set to product variations with any of the statuses.
     Object excludeStatus = null; // Object | Exclude product variations with any of the statuses from result set.
     try {
-      WooCommerceProductVariation result = apiInstance.wcV3VariationsGet()
+      List<WooCommerceProductVariation> result = apiInstance.wcV3VariationsGet()
             .context(context)
             .page(page)
             .perPage(perPage)
@@ -20865,7 +20865,7 @@ public class Example {
 
 ### Return type
 
-[**WooCommerceProductVariation**](WooCommerceProductVariation.md)
+[**List&lt;WooCommerceProductVariation&gt;**](WooCommerceProductVariation.md)
 
 ### Authorization
 

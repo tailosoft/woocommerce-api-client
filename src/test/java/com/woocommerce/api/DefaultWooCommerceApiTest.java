@@ -4795,7 +4795,7 @@ public class DefaultWooCommerceApiTest {
         Object categories = null;
         Object tags = null;
         Object limit = null;
-        WooCommerceProduct response = api.wcV3ProductsSuggestedProductsGet()
+        List<WooCommerceProduct> response = api.wcV3ProductsSuggestedProductsGet()
                 .context(context)
                 .page(page)
                 .perPage(perPage)
@@ -5038,7 +5038,7 @@ public class DefaultWooCommerceApiTest {
         Object orderItemDisplayMeta = null;
         Object includeMeta = null;
         Object excludeMeta = null;
-        WooCommerceShopOrderRefund response = api.wcV3RefundsGet()
+        List<WooCommerceShopOrderRefund> response = api.wcV3RefundsGet()
                 .context(context)
                 .page(page)
                 .perPage(perPage)
@@ -6100,7 +6100,7 @@ public class DefaultWooCommerceApiTest {
         Object downloadable = null;
         Object includeStatus = null;
         Object excludeStatus = null;
-        WooCommerceProductVariation response = api.wcV3VariationsGet()
+        List<WooCommerceProductVariation> response = api.wcV3VariationsGet()
                 .context(context)
                 .page(page)
                 .perPage(perPage)

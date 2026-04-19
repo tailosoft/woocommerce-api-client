@@ -135,3 +135,16 @@ Once the project compiles, to test it:
 ```bash
 ./gradlew publishToMavenLocal
 ```
+
+## Releasing to Maven Central
+
+Credentials are read from `~/.m2/settings.xml` (the `central` server entry), which expects `CENTRAL_USERNAME` / `CENTRAL_TOKEN` — user tokens generated at https://central.sonatype.com/account (not your Sonatype Jira password). Artifacts are GPG-signed via the `sign-artifacts` profile.
+
+Export the credentials (KeyPass) then run the deploy:
+```bash
+export CENTRAL_USERNAME=<your-portal-username>
+export CENTRAL_TOKEN=<your-portal-token>
+mvn clean deploy -Psign-artifacts
+```
+
+With `<autoPublish>true</autoPublish>` in the `central-publishing-maven-plugin` config, the release is pushed to Central as soon as validation passes — no manual approval step at https://central.sonatype.com/publishing/deployments. Flip it to `false` if you want a staging step you can inspect first.
